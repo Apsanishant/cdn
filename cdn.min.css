@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ci.ci-1{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+.ci.ci-1 .ot{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.ci.ci-1 .ot.ci .in{
+display: none;
+}
+.ci.ci-1 .ot .in{
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+     -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+     0.5px 0.5px 0px rgba(0,0,0,0.05),
+     0px 12px 10px -10px rgba(0,0,0,0.05);
+
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.in #number{
+    font-weight: 600;
+    color: #555;
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: amin 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+}
+@keyframes amin {
+    100%{
+        stroke-dashoffset:0;
+    }
+}
+.ci.ci-2{
+    width: 400px;
+    height: 30px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    animation: l 2s linear infinite alternate-reverse;
+}
+.ci.ci-2 .load.s{
+    width: 0px;
+    background: blue;
+    border-radius: 20px;
+    height: 100%;
+    animation: load 90s infinite ;
+
+}
+.ci.ci-2 .load.m{
+    width: 0px;
+    background: blue;
+    border-radius: 20px;
+    height: 100%;
+    animation: load 60s infinite ;
+
+}
+.ci.ci-2 .load.f{
+    width: 0px;
+    background: blue;
+    border-radius: 20px;
+    height: 100%;
+    animation: load 30s infinite ;
+
+}
+.ci-3{
+    width: 50px;
+    height: 50px;
+    border: 5px solid blue;
+    border-radius: 50%;
+    border-left: 5px solid transparent;
+    animation: rotate 1s linear infinite;
+
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes load {
+  100%{
+      width: 100%;
+      border-radius: 20px;
+  }
+}
+body{background: #efefef;}
