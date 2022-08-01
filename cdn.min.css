@@ -111,3 +111,68 @@ svg{
   }
 }
 body{background: #efefef;}
+
+.wrapper .item{
+    margin: 30px;
+    display: flex;
+    width: 0px;
+    transition: 1s;
+    height: auto;
+    border-radius: 20px;
+}
+.wrapper .item  i{
+    width: 70px;
+    height: 70px;
+    
+    color: #000;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 1s;
+    position: relative;
+    box-shadow: inset 0 1px 10px #00000080,
+                inset 0 -1px 10px #00000080;
+    margin-left: -20px;
+}
+.wrapper .item .text{
+    font-size: 30px;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    width: 0px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 1s;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.wrapper .item:hover{
+    width: 200px;
+    box-shadow: 0 3px 10px #00000080;
+}
+.wrapper .item:hover   i{
+    color: #fff;
+    background: rgb(0, 183, 255);
+    box-shadow:  0 1px 10px #00000080,
+                 0 -1px 10px #00000080;
+}
+.wrapper .item  i:hover ~ .wrapper .item{
+    width: 200px !important;
+}
+.wrapper .item:hover .text{
+    opacity: 1;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: all;
+}
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
